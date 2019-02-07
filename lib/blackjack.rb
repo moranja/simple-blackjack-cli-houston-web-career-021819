@@ -1,3 +1,5 @@
+require 'pry'
+
 def welcome
   puts "Welcome to the Blackjack Table"
 end
@@ -37,6 +39,10 @@ def hit? (total)
     new_card = deal_card
     new_total = total + new_card
     return new_total
+<<<<<<< HEAD
+=======
+    binding.pry
+>>>>>>> 003b72adb0f759598960af8be951bab76c5ea471
   else
     invalid_command
     prompt_user
